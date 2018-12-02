@@ -5,4 +5,5 @@ Locales['en'] = {
   ['wash_failed_clean'] = 'your vehicle does not need a car wash.',
   ['wash_successful'] = 'your vehicle has been washed',
   ['wash_successful_paid'] = 'your vehicle has been washed for ~g~$%s~s~',
+  ['blip_carwash'] = 'car Wash',
 }
