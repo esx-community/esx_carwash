@@ -44,9 +44,9 @@ Citizen.CreateThread(function()
 
 			for i=1, #Config.Locations, 1 do
 				carWashLocation = Config.Locations[i]
-				DrawMarker(1, carWashLocation, 0, 0, 0, 0, 0, 0, 5.0, 5.0, 2.0, 0, 157, 0, 155, false, false, 2, false, false, false, false)
 
 				if GetDistanceBetweenCoords(coords, carWashLocation, true) < 50 then
+					DrawMarker(1, carWashLocation, 0, 0, 0, 0, 0, 0, 5.0, 5.0, 2.0, 0, 157, 0, 155, false, false, 2, false, false, false, false)
 					canSleep = false
 				end
 
