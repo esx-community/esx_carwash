@@ -88,7 +88,7 @@ function WashVehicle()
 	ESX.TriggerServerCallback('esx_carwash:canAfford', function(canAfford)
 		if canAfford then
 			local vehicle = GetVehiclePedIsIn(PlayerPedId())
-			SetVehicleDirtLevel(vehicle, 0.1)
+			SetVehicleDirtLevel(vehicle, 0.0)
 
 			if Config.EnablePrice then
 				ESX.ShowNotification(_U('wash_successful_paid', ESX.Math.GroupDigits(Config.Price)))
