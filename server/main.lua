@@ -1,4 +1,4 @@
-ESX = nil
+ESX = exports["es_extended"]:getSharedObject()
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
