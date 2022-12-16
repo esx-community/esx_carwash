@@ -6,7 +6,7 @@ Car wash for ESX.
 
 ### Using [fvm](https://github.com/qlaffont/fvm-installer)
 ```
-fvm install --save --folder=esx-addons esx-community/esx_carwash
+fvm install --save --folder=[esx-addons] esx-community/esx_carwash
 ```
 
 ### Using Git
