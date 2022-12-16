@@ -30,9 +30,9 @@ Citizen.CreateThread(function()
 
 		if CanWashVehicle() then
 
-			for i=1, #Config.Locations, 1 do
+			for i = 1, #Config.Locations, 1 do
 				local carWashLocation = Config.Locations[i]
-				local distance = GetDistanceBetweenCoords(coords, carWashLocation, true)
+				local distance = #(coords - carWashLocation)
 
 				if distance < 50 then
 					DrawMarker(1, carWashLocation, 0, 0, 0, 0, 0, 0, 5.0, 5.0, 2.0, 0, 157, 0, 155, false, false, 2, false, false, false, false)
@@ -89,6 +89,7 @@ function WashVehicle()
 		if canAfford then
 			local vehicle = GetVehiclePedIsIn(PlayerPedId())
 			SetVehicleDirtLevel(vehicle, 0.0)
+			WashDecalsFromVehicle(vehicle, 1.0)
 
 			if Config.EnablePrice then
 				ESX.ShowNotification(_U('wash_successful_paid', ESX.Math.GroupDigits(Config.Price)))
